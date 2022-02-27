@@ -1,5 +1,8 @@
 # C_project_test
-before everything - open cmd and 
+before everything - open cmd and check if the command "python" works.
+if not - tell leah!
+
+after that:
 1. clone project.
 2. open spkmeans_compare.py.
 3. change FINAL_PROJECT_PATH to be your final project path that includes the spkmeans.py file.
