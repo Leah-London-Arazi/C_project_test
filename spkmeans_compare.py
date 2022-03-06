@@ -7,6 +7,7 @@ INPUTS_PATH = os.path.join(TEST_PROJECT_PATH, "tests_inputs_outputs\\inputs")
 RESULTS_PATH = os.path.join(TEST_PROJECT_PATH, "tests_inputs_outputs\\outputs")
 YOUR_RESULTS_PATH = os.path.join(TEST_PROJECT_PATH, "your_outputs")
 COMPARE_JSON_FILE_PATH = os.path.join(TEST_PROJECT_PATH, "compare.json")
+YOUR_PYTHON_COMMAND = "python"
 
 def compare_outputs_python(outputs_dir, inputs_dir):
     # load json data
@@ -21,7 +22,7 @@ def compare_outputs_python(outputs_dir, inputs_dir):
         input_file_path = os.path.join(INPUTS_PATH, input_file_name)
         tests = test_file["tests"]
         for test in tests:
-            command_no_path = test["command"]
+            command_no_path = test["command"].replace("python", YOUR_PYTHON_COMMAND)
             output_file_relative_path = test["output_file_relative_path"]
             output_file_path = os.path.join(YOUR_RESULTS_PATH, output_file_relative_path)
             command = command_no_path.format(input_file_path)
