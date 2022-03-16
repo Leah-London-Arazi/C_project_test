@@ -1,8 +1,8 @@
 import os, sys, json
 from mykmeanssp import *
 
-FINAL_PROJECT_PATH = r'your_path'
-TEST_PROJECT_PATH = r'your_path'
+FINAL_PROJECT_PATH = r'C:\Users\Leah London Arazi\Dropbox\My PC (Leah-X1-Carbon)\Documents\Leah X1 Carbon\university\2022a\program project\C_project\final_project'
+TEST_PROJECT_PATH = r'C:\Users\Leah London Arazi\Dropbox\My PC (Leah-X1-Carbon)\Documents\Leah X1 Carbon\university\2022a\program project\C_project_test'
 INPUTS_PATH = os.path.join(TEST_PROJECT_PATH, "tests_inputs_outputs\\inputs")
 RESULTS_PATH = os.path.join(TEST_PROJECT_PATH, "tests_inputs_outputs\\outputs")
 YOUR_RESULTS_PATH = os.path.join(TEST_PROJECT_PATH, "your_outputs")
@@ -18,8 +18,8 @@ def compare_outputs_python(outputs_dir, inputs_dir):
     os.chdir(FINAL_PROJECT_PATH)
 
     for test_file in json_data:
-        input_file_name = test_file["input_file_name"]
-        input_file_path = os.path.join(INPUTS_PATH, input_file_name)
+        input_file_relative_name = test_file["input_file_relative_name"]
+        input_file_path = os.path.join(INPUTS_PATH, input_file_relative_name)
         tests = test_file["tests"]
         for test in tests:
             command_no_path = test["command"].replace("python", YOUR_PYTHON_COMMAND)
