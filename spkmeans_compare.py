@@ -1,8 +1,8 @@
 import os, sys, json
 from mykmeanssp import *
 
-FINAL_PROJECT_PATH = r'C:\Users\Leah London Arazi\Dropbox\My PC (Leah-X1-Carbon)\Documents\Leah X1 Carbon\university\2022a\program project\C_project\final_project'
-TEST_PROJECT_PATH = r'C:\Users\Leah London Arazi\Dropbox\My PC (Leah-X1-Carbon)\Documents\Leah X1 Carbon\university\2022a\program project\C_project_test'
+FINAL_PROJECT_PATH = r'your_path'
+TEST_PROJECT_PATH = r'your_path'
 INPUTS_PATH = os.path.join(TEST_PROJECT_PATH, "tests_inputs_outputs\\inputs")
 RESULTS_PATH = os.path.join(TEST_PROJECT_PATH, "tests_inputs_outputs\\outputs")
 YOUR_RESULTS_PATH = os.path.join(TEST_PROJECT_PATH, "your_outputs")
