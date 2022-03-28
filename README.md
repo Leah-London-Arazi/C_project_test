@@ -10,4 +10,4 @@
 8. open cmd from the repository path.
 9. run "python spkmeans_compare.py"
 
-your tests results will be shown on the consule and as a results file at "test_results" directory.
+your tests results will be shown on the console and as a results file at "test_results" directory.
