@@ -7,7 +7,8 @@
 5. change TEST_PROJECT_PATH to be your repository path.
 6. run "python setup.py build_ext --inplace" as usual to get the most recent module.
 7. copy the module build dir and .pyd file to the repository path.
-8. open cmd from the repository path.
-9. run "python spkmeans_compare.py"
+8. compile and copy spkmeans.exe file to the repository path.
+9. open cmd from the repository path.
+10. run "python spkmeans_compare.py"
 
 your tests results will be shown on the consule and as a results file at "test_results" directory.
