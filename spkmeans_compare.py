@@ -1,7 +1,6 @@
 import os, sys, json
 from datetime import datetime
 
-FINAL_PROJECT_PATH = r'your_path'
 TEST_PROJECT_PATH = r'your_path'
 INPUTS_PATH = os.path.join(TEST_PROJECT_PATH, "tests_inputs_outputs\\inputs")
 RESULTS_PATH = os.path.join(TEST_PROJECT_PATH, "tests_inputs_outputs\\outputs")
@@ -20,7 +19,7 @@ def compare_outputs_python(outputs_dir, inputs_dir):
             json_data = json.load(f)
 
         # change current dir
-        os.chdir(FINAL_PROJECT_PATH)
+        os.chdir(TEST_PROJECT_PATH)
 
         for test_file in json_data:
             input_file_relative_name = test_file["input_file_relative_name"]
