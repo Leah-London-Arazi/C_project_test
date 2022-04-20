@@ -2,8 +2,8 @@ import os, sys, json
 from datetime import datetime
 
 TEST_PROJECT_PATH = r'your_path'
-INPUTS_PATH = os.path.join(TEST_PROJECT_PATH, "tests_inputs_outputs\\inputs")
-RESULTS_PATH = os.path.join(TEST_PROJECT_PATH, "tests_inputs_outputs\\outputs")
+INPUTS_PATH = os.path.join(TEST_PROJECT_PATH, "tests_inputs_outputs/inputs")
+RESULTS_PATH = os.path.join(TEST_PROJECT_PATH, "tests_inputs_outputs/outputs")
 TEST_RESULTS_PATH = os.path.join(TEST_PROJECT_PATH, "test_results")
 YOUR_RESULTS_PATH = os.path.join(TEST_PROJECT_PATH, "your_outputs")
 COMPARE_JSON_FILE_PATH = os.path.join(TEST_PROJECT_PATH, "compare.json")
